@@ -2257,12 +2257,11 @@ MonoBehaviour:
     upgradedPrefab: {fileID: 1680535116951788, guid: 5e330384154985b48b0974e4a4a6a23a,
       type: 3}
     upgradeCost: 60
-  missileLauncherTurret:
-    prefab: {fileID: 1249713845657978, guid: 9f4f2cfb2b4629348b53069f1462a2b1, type: 3}
-    cost: 250
-    upgradedPrefab: {fileID: 1249713845657978, guid: 0a7f7218a37526c40af72fdfc27658e5,
-      type: 3}
-    upgradeCost: 150
+  missileLauncher:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
   laserBeamerTurret:
     prefab: {fileID: 0}
     cost: 0
@@ -4018,6 +4017,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4ede7ae080087e40a720b3a91daefc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startHealth: 100
 --- !u!4 &438880399
 Transform:
   m_ObjectHideFlags: 0
@@ -7549,10 +7549,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManager: {fileID: 732405761}
   waves:
-  - enemy: {fileID: 1032591596636490, guid: 5341f1a3629f05844a24356338048045, type: 3}
+  - enemy: {fileID: 100048, guid: 888df1b52fdf2bd4cabffbbece343036, type: 3}
     count: 2
     rate: 2
-  - enemy: {fileID: 1032591596636490, guid: 1a3e1ab60e4c488419cb53471b24c3eb, type: 3}
+  - enemy: {fileID: 100048, guid: 888df1b52fdf2bd4cabffbbece343036, type: 3}
     count: 3
     rate: 2
   spawnPoint: {fileID: 1869162655}
