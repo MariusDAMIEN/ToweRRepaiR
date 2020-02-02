@@ -9,6 +9,10 @@ public class Enemy : MonoBehaviour {
     public float startHealth = 100f;
     private float health;
     public int worth = 50;
+    public int atk = 10;
+    public float fireCountdown = 0f;
+    public float fireRate = 1f;
+
 
     public GameObject deathEffect;
 

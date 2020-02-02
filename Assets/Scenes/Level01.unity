@@ -2264,11 +2264,10 @@ MonoBehaviour:
       type: 3}
     upgradeCost: 150
   laserBeamerTurret:
-    prefab: {fileID: 1129674820563134, guid: a3f011b7cf2d1584a970354060d39bb2, type: 3}
-    cost: 350
-    upgradedPrefab: {fileID: 1129674820563134, guid: c5dd1744b377211468c5b3e2fbf8b34f,
-      type: 3}
-    upgradeCost: 250
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
 --- !u!1001 &222748451
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4974,7 +4973,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e7949bf27aef211408d8bf6994fad0d7, type: 3}
   m_Name: 

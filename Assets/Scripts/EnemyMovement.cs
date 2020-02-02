@@ -27,14 +27,29 @@ public class EnemyMovement : MonoBehaviour {
         enemy.speed = enemy.startSpeed;
     }
 
+    public void EnnemyAttack()
+    {
+        // Waypoints w = GetComponent<Waypoints>();
+        enemy.speed = 0;
+        if (enemy.fireCountdown <= 0f)
+        {
+            // Waypoints.health -= enemy.atk;
+            Debug.Log("DEGAT + 10");
+            Debug.Log(Waypoints.health);
+            Waypoints.TakeDammage(enemy.atk);
+            enemy.fireCountdown = 1 / enemy.fireRate;
+        }
+        enemy.fireCountdown -= Time.deltaTime;
+        // EndPath();
+    }
+
     private void GetNextWaypoint()
     {
         if (waypointIndex >= Waypoints.points.Length - 1)
         {
-            EndPath();
+            EnnemyAttack();
             return;
         }
-
         waypointIndex++;
         target = Waypoints.points[waypointIndex];
     }
